@@ -1,0 +1,165 @@
+/* Fonts */
+@font-face {
+font-family: 'Hamisheh';
+src: url('../../Assets/Fonts/Hamisheh/Digi\ Hamishe\ Regular.ttf') format('truetype');
+font-weight: 400;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Hamisheh';
+src: url('../../Assets/Fonts/Hamisheh/Digi\ Hamishe\ Bold.ttf') format('truetype');
+font-weight: 700;
+font-style: normal;
+}
+/* Scroll Bar customize */
+::-webkit-scrollbar {
+  width: 10px;     
+  height: 10px;    
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;        
+  border-radius: 10px;     
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;           
+  border-radius: 10px;        
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;            
+}
+
+::-webkit-scrollbar-corner {
+  background: #f1f1f1;         
+}
+.hidden-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Other */
+*{
+    font-family: "Hamisheh";
+}
+.light-gray{
+    color: #7a7c81;
+}
+.dark-gray{
+    color: #31353c;
+}
+.red {
+    color: #ed1944;
+}
+
+.full-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.full-center-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 15px;
+}
+input {
+    outline: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: inherit;
+}
+
+/* Mega Menu */
+.dropdown {
+    display: none;
+    z-index: 10;
+} 
+#a:hover .dropdown{
+    display: block;
+}
+
+.dropdown-big{
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 250px;
+    z-index: 11;
+
+}
+.mega-big:hover .dropdown-big{
+    display: block;
+}
+
+/* Max-lg footer Acardeon */
+.acardeon {
+  border-top: 1px solid #ddd;
+  padding: 0;
+}
+
+.acardeon-title {
+  padding: 15px 20px;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.acardeon-title::-webkit-details-marker {
+  display: none;
+}
+
+.acardeon-title::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  background-image: url("../../Assets/Images/arrow-left-2-bold.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+details[open] .acardeon-title::after {
+  transform: rotate(-90deg);
+}
+
+.acardeon-content {
+  padding: 0 20px 20px 20px;
+}
+
+/* Modals */
+#backdrop{
+  display: none;
+}
+
+.location-modal{
+  display: none;
+}
+.super-market-modal {
+  display: none;
+}
+
+/* Sticky Bottom Menu Tabs */
+.tab-btn.active {
+    background-color: white;
+    color: #ed1944;
+    border:none;
+}
+.tab-panel {
+  display : none;
+}
+.tab-panel.active {
+    display: block;
+}
